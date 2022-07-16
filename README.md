@@ -1,6 +1,6 @@
-# Cinemate
+# CineMate
 
-Scripts for added functionality of the CinePi 2K-system. 
+Tools for added functionality of the CinePi 2K-system. 
 
 ### rec_signal.py
 
