@@ -86,21 +86,9 @@ before the line
 
 `exit 0`
 
-## Running the scripts on startup
-
-<code>sudo nano /etc/rc.local</code>
-
-and add
-
-<code>python3 /home/pi/CineMate-HAT.py &</code>
-
-before the line
-
-<code>python3 /home/pi/camera/cameracore3.py &</code>
-
 Exit by pressing ctrl-x and then selecting "yes".
 
-<i><b>or</b></i> add the scripts to the end of the file `home/pi/camera/cameracore3.py`
+<i><b>... or</b></i> add the scripts to the end of the file `home/pi/camera/cameracore3.py`
 
 Reboot the Pi.
 
@@ -112,7 +100,7 @@ Select the clips in your bin.
 
 <i>File > Import metadata to > selected media pool clips</i>
 
-In the dialog window, deselect Match using clip start and Timecode and select Update all metadata fields available in the source file.
+In the dialog window, deselect <i>Match using clip start and Timecode</i> and select <i>Update all metadata fields available in the source file</i>.
 
 <img width="640" alt="resolve" src="https://user-images.githubusercontent.com/74836180/179369440-84b2401b-047f-4a51-b7da-1ef1248c8a9e.png">
 
