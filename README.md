@@ -8,7 +8,7 @@ Connect GPIO 21 (the default CinePi rec-out-pin) with a jumper wire to GPIO 20. 
 
 SSH into the Pi. Then,
 
-`git clone https://github.com/Tiramisioux/cinemate.git`
+`git clone https://github.com/Tiramisioux/cinemate-tools.git`
 
 #### Make script run on start-up
 
