@@ -6,7 +6,7 @@ Get a crude tone out from the built-in audio jack on the Raspberry Pi 4, using P
 
 Connect GPIO 21 (the default CinePi rec-out-pin) with a jumper wire to GPIO 20. The script then uses pin 20 as an input pin to detect whether recording started/ended.
 
-## edl.py
+## metadata.py
 
 For generating an metadata file <i>metadata.csv</i> and EDL (edit decision list) <i>edl.edl</i> with all the clips synced on a timeline, for easy import to DaVinci. Uses the file controls.py, a slightly modified version of the original `home/pi/camera/proxy.py` to get the shutter angle and ISO the camera. Like for `rec_signal.py` GPIO 21 has to be connected to GPIO 20.
 
