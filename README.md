@@ -1,7 +1,3 @@
-# CineMate
-
-Tools for added functionality of the CinePi 2K-system. 
-
 ### rec_signal.py
 
 Get a crude tone out from the built-in audio jack on the Raspberry Pi 4, using PWM to save processing power. Can be used to trigger an external field recorder, like the Zoom H6, or to just get a reference tone to which to sync your clips. Uses PWM for genera
