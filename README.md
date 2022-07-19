@@ -82,9 +82,7 @@ add the lines
 
 `sudo python3 /home/pi/cinemate/metadata.py &`
 
-before the line 
-
-`exit 0`
+before the line <i>exit 0</i>
 
 Exit by pressing ctrl-x and then selecting "yes".
 
