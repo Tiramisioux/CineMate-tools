@@ -22,7 +22,7 @@ Go into raspi-config and enable I2C.
 
 <code>sudo raspi-config</code>
 
-Enable i2Cc.
+Enable I2C
 
 Open the file /boot/config.txt
 
@@ -32,7 +32,7 @@ Add the following line to the file:
 
 <code>dtoverlay=i2c-gpio,bus=2,i2c_gpio_delay_us=1,i2c_gpio_sda=27,i2c_gpio_scl=18</code>
 
-This will create a second I2C channel on with GPIO 27 as SDA and GPIO 18 as SCL. Feel free to change these if needed.
+This will create a second I2C channel on with GPIO 27 as SDA and GPIO 18 as SCL. Feel free to change these if needed but avoid GPIO 2,3,4,20,21 as these are used by other scripts/camera system
 
 Exit by pressing ctrl-x and then selecting "yes".
 
