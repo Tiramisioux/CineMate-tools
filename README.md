@@ -56,7 +56,7 @@ then open /etc/rc.local
 
 <code>sudo nano /etc/rc.local</code>
 
-Add the following lines before the line <code>python3/home/pi/camera/cameracore3.py &</code>
+Add the following lines before the line <i>python3/home/pi/camera/cameracore3.py &</i>
 
 <code>echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-2/new_device &</code>
 
