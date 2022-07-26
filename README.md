@@ -8,13 +8,15 @@ Connect GPIO 21 (the default CinePi rec-out-pin) with a jumper wire to GPIO 20. 
 
 ## metadata.py
 
-For generating <i>metadata.csv</i> and EDL (edit decision list) <i>edl.edl</i> with all the clips synced on a timeline, for easy import to DaVinci. Uses the file controls.py, a slightly modified version of the original `home/pi/camera/proxy.py` to get the shutter angle and ISO from the camera. Like for <i>rec_signal.py</i> GPIO 21 has to be connected to GPIO 20.
+For generating <i>metadata.csv</i> and EDL (edit decision list) <i>edl.edl</i> with all the clips synced on a timeline, for easy import to DaVinci. Uses the file <i>controls.py</i>, a slightly modified version of the original `home/pi/camera/proxy.py` to get the shutter angle and ISO from the camera. Like for <i>rec_signal.py</i> GPIO 21 has to be connected to GPIO 20.
 
-Clips will be conformed to 24 fps. To change this, change the variable `fps_base`. Clips where speed change has occured during the shot will be marked with a pink flag in DaVincvi Resolve.
+Clips will be conformed to 24 fps. To change this, change the variable `fps_base`. Clips shot in a different frame than fps_base (for example when speed ramping or doing slow-mo) will be marked with a pink flag in DaVincvi Resolve.
 
 ### Installing an RTC
 
-For edl.py to work properly you need an RTC (Real Time Clock) connected to the Pi. I recommend the DS3231 type. Since I2C channel 1 is used by the camera you need to create a second I2C channel. Files will be written to the SSD drive so the script has to be run as sudo.
+For edl.py to work properly you need an RTC (Real Time Clock) connected to the Pi. I recommend the DS3231 type. Since I2C channel 1 is used by the camera you need to create a second I2C channel. 
+
+Files will be written to the SSD drive so the script has to be run as sudo.
 
 SSH into the Pi.
 
