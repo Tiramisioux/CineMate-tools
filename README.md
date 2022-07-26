@@ -88,11 +88,11 @@ before the line <i>exit 0</i>
 
 Exit by pressing ctrl-x and then selecting "yes".
 
-<i><b>... or</b></i> add the scripts to the end of the file `home/pi/camera/cameracore3.py`
+<i><b>... or</b></i> add the scripts to the end of the file `home/pi/camera/cameracore3.py` (remember to add sudo for running <i>metadata.py</i>)
 
 Reboot the Pi.
 
-## Import metadata and edl to DaVinci Resolve
+## Importing metadata and edl to DaVinci Resolve
 
 In Resolve:
 
